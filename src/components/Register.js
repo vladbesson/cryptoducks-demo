@@ -1,4 +1,4 @@
-import React, { Button } from 'react';
+import React  from 'react';
 import { Link, withRouter } from 'react-router-dom';
 import Logo from './Logo.js';
 import * as duckAuth from '../duckAuth.js';
@@ -20,7 +20,7 @@ class Register extends React.Component {
   handleChange(e) {
     const {name, value} = e.target;
     this.setState({
-      [name]: value 
+      [name]: value
     });
   }
   handleSubmit(e){

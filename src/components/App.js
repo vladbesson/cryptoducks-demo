@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { Route, Switch, Redirect, withRouter } from 'react-router-dom';
 import Login from './Login.js';
 import Register from './Register.js';
@@ -41,7 +41,7 @@ class App extends React.Component {
             this.props.history.push("/ducks");
           });
         }
-      }); 
+      });
     }
   }
   render(){
